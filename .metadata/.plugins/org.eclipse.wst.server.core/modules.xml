@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:k20230725_test" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230802_1_springWEB_Transaction" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230802_3_springWEB_Transaction3" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230720_1_springWEB_controller" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230802_2_springWEB_Transaction2" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230803_2_springWEB_Security4" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230804_2_springWEB_NaverLoginAPI" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230803_4_springWEB_Mybatis_board_Final" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230720_3_springWEB_redirect" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230717_1_springDI_xml_setter" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230802_5_springWEB_Security" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230802_4_springWEB_Transaction4" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230719_4_springWEB_sample" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230721_1_springWEB_DBCP" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230803_3_springWEB_Mybatis_board" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230803_1_springWEB_Security3" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230720_2_springWEB_request" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230802_6_springWEB_Security2" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230801_1_springWEB_DBCPTemplete_board" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230726" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:k20230804_1_springWEB_Fileupload" serverId="Pivotal tc Server Developer Edition v4.0"/>
+</modules>

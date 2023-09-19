@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="student5" class="com.tjoeun.springDI_xml_namespace.Student">
+		<constructor-arg value="장길산"/>
+		<constructor-arg value="50"/>
+		<constructor-arg>
+			<list>
+				<value>당구</value>
+				<value>골프</value>
+				<value>볼링</value>
+			</list>
+		</constructor-arg>
+		<property name="heigth" value="185"/>
+		<property name="weight" value="120"/>
+	</bean>
+	
+	<!-- Family 클래스 bean 설정 -->
+	<!--  
+	기존 방식
+	<bean id="family" class="com.tjoeun.springDI_xml_namespace.Family">
+		<constructor-arg value="홍아빠"></constructor-arg>
+		<constructor-arg value="홍엄마"></constructor-arg>
+		<property name="sisterName" value="홍누나"></property>
+		<property name="brotherName" value="홍동생"></property>
+	</bean>
+	-->
+	
+	<!--  
+		Namespaces 사용
+		c namespace, p namespace를 사용하려면 xml 파일 코드 편집창 아래의 Source 
+		탭을 Namespaces 탭으로 변경하고 c namespace, p namespace에 체크한 후 Source 
+		탭으로 돌아오면 beans 태그에 아래의 내용이 자동으로 입력됨을 확인할 수 있다.
+		xmlns:c="http://www.springframework.org/schema/c" => 생성자, constructor
+		xmlns:p="http://www.springframework.org/schema/p" => setter, property
+		<constructor-arg>와 <property> 태그는 <bean> ~ </bean> 태그 사이에 
+		코딩하지만 c namespace, p namespace는 <bean> 태그 내부에 코딩한다.
+	-->
+	
+	<bean id="family" class="com.tjoeun.springDI_xml_namespace.Family" 
+		c:papaName="홍아빠"	
+		c:mamiName="홍엄마" 
+		p:sisterName="홍누나" 
+		p:brotherName="홍동생"
+	/>
+		
+</beans>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+    <!--
+            <Manager pathname="" />
+            -->
+    <!-- Uncomment this to enable Comet connection tacking (provides events
+                 on session expiration as well as webapp lifecycle) -->
+    <!--
+            <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
+            -->
+    <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+    
+    <!--
+		name : DBCP 이름, 커넥션 풀 이름, "jdbc/"는 항상 똑같이 쓰고 "/" 뒤에 커넥션 풀 이름을 적는다.
+		type : 데이테베이스 연결에 사용할 자바 클래스 이름, 반드시 이 클래스를 사용해야 한다.
+		auth : DBCP를 톰캣이 관리한다는 의미로 Container라 적어준다.
+		maxActive : 데이터베이스 연결 풀의 최대값, 최대 연결 허용 개수
+		maxIdle : 접속을 유지하는 데이터베이스 연결 풀의 최대 개수, 항상 연결을 유지하는 풀의 개수
+		maxWait : 데이터베이스 접속을 위해서 기다리는 최대 시간, -1을 쓰면 대기 시간 없이 바로 접속한다.
+		username : 사용자 계정
+		password : 사용자 비밀번호
+		driverClassName : 데이터베이스 드라이버 클래스 이름
+		url : 데이터베이스 접속을 위한 경로
+	-->
+	<Resource
+		name = "jdbc/oracle"							
+		auth = "Container"
+		type = "javax.sql.DataSource"
+		maxActive = "50"
+		maxIdle = "20"
+		maxWait = "-1"
+		url = "jdbc:oracle:thin:@localhost:1521:xe"
+		driverClassName = "oracle.jdbc.driver.OracleDriver"
+		username = "tjoeunit"
+		password = "0000"
+	/>
+    
+</Context>
